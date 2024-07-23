@@ -50,7 +50,7 @@ Detailed steps: https://vivekjadhavr.medium.com/how-to-easily-install-apache-air
 
 
 # Find the mysql ip address: mysql running in podman
-podman inspect <container_id_or_name> | findstr "IPAddress"
+`podman inspect <container_id_or_name> | findstr "IPAddress"`
 
 - ubuntu password: <pin>
 - ubuntu username: bandham
@@ -58,13 +58,13 @@ podman inspect <container_id_or_name> | findstr "IPAddress"
 # install mysql client in ubuntu:
 sudo apt install mysql-client
 
-mysql -h 127.0.0.1 -P 3306 -u root -p
+`mysql -h 127.0.0.1 -P 3306 -u root -p`
 
 
-jar tf airflow/mysql-connector-j-8.2.0.jar | grep com/mysql/cj/jdbc/Driver.class
-sudo apt-get install python3-pip
-sudo apt install openjdk-11-jdk
-sudo apt install telnet
+`jar tf airflow/mysql-connector-j-8.2.0.jar | grep com/mysql/cj/jdbc/Driver.class`
+`sudo apt-get install python3-pip`
+`sudo apt install openjdk-11-jdk`
+`sudo apt install telnet`
 
 
 
