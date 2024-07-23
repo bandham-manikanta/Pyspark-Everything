@@ -1,0 +1,3 @@
+/.ipynb_checkpoints/*
+/*/*/__pycache__/*
+/pyspark_write_to_mysql_rdbms/logs/*

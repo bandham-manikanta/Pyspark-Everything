@@ -1,0 +1,21 @@
+# Set the root logger level to INFO and its appender to console
+rootLogger.level = INFO
+rootLogger.appenderRef.stdout.ref = STDOUT
+
+# Define the STDOUT appender
+appender.STDOUT.type = Console
+appender.STDOUT.name = STDOUT
+appender.STDOUT.layout.type = PatternLayout
+appender.STDOUT.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+# Set the logger levels for specific packages
+logger.org.apache.spark.level = INFO
+logger.org.apache.spark.appenderRef.stdout.ref = STDOUT
+logger.org.apache.spark.appenderRef.file.ref = FILE
+
+# Adjust the logging level for specific Spark components if needed
+logger.org.apache.spark.scheduler.level = WARN
+logger.org.apache.spark.storage.level = WARN
+logger.org.apache.spark.executor.level = WARN
+logger.org.apache.spark.sql.execution.level = WARN
+
