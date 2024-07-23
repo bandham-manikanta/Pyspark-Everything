@@ -52,8 +52,8 @@ Detailed steps: https://vivekjadhavr.medium.com/how-to-easily-install-apache-air
 # Find the mysql ip address: mysql running in podman
 podman inspect <container_id_or_name> | findstr "IPAddress"
 
-# ubuntu password: 7787
-# ubuntu username: bandham
+- ubuntu password: <pin>
+- ubuntu username: bandham
 
 # install mysql client in ubuntu:
 sudo apt install mysql-client
