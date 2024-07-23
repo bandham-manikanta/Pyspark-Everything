@@ -56,7 +56,7 @@ Detailed steps: https://vivekjadhavr.medium.com/how-to-easily-install-apache-air
 - ubuntu username: bandham
 
 # install mysql client in ubuntu:
-sudo apt install mysql-client
+`sudo apt install mysql-client`
 
 `mysql -h 127.0.0.1 -P 3306 -u root -p`
 
